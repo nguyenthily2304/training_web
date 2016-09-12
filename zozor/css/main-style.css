@@ -1,7 +1,6 @@
 body{
 	background: url('../images/fond_jaune.png') no-repeat;
 	background-size: cover;
-	/*margin: 1em 3em 1em 3em;*/
 }
 .container{
 	width: 60%;
@@ -15,6 +14,7 @@ body{
 	font-family: dayrom;
 	src: url(../fonts/dayrom.ttf) format("truetype");
 }
+/*-----------header-------------*/
 header{
 	width: 100%;
 	display: inline-block;
@@ -61,9 +61,8 @@ nav>ul>li>a{
 button img.arrow-right{
 	width: 10%;
 }
-/*section*/
+/*------------section-------------*/
 section img{
-	/*padding-top: 2em;*/
 	width: 100%;
 }
 section .flash{
@@ -89,7 +88,7 @@ section .flash button{
     color: #fff;
     background: rgba(222, 11, 11, 0.87);
 }
-/*div */
+/*--------------div-------------- */
 section.second-section{
 	border-bottom: 2px ridge rgba(194, 170, 158, 0.86);
 	display: inline-block;
@@ -104,10 +103,9 @@ section aside{
 	font-family: dayrom;
 	width: 30%;
 	float: right;
-	background: #9E9E9E;
+	background: #706b64;
 	margin-top: 1em;
 	color: #fff;
-	border-left-image: url('../images/bulle.png');
 	border-left-width: 20px;
 	border-radius: 10px;
 }
@@ -123,8 +121,15 @@ article img.icon_ep{
 aside img.classes_icon{
 	width: 60%;
 	display: block;
+	border: 1px solid #000;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    margin-top: -5em;
+}
+.arrow_left{
+	width: 5%;
+	margin-top:5em;
+	margin-left: -1em;
 }
 aside p{
 	padding: 0 1em 0 1em;
@@ -133,7 +138,7 @@ aside p{
 aside p img{
 	width: 18%;
 }
-/*footer*/
+/*----------footer------------*/
 footer{
 	width: 100%;
 	display: inline-block;
