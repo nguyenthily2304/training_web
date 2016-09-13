@@ -6,12 +6,17 @@ body{
 	src: url('../fonts/Rokkitt-Regular.ttf');
 	font-family: Rokkitt-Regular;
 }	
-header{
-	background: #d44646;
+header .container{
+	/*background: #d44646;*/
+	background:url(../images/bg.png) repeat-x 0 0 #e03d3d;
 	padding: 2em;
 }
 section{
 	padding-top: 1em;
+}
+footer .container>.row.foot{
+	background: #0a0a0a;
+	padding: 2em;
 }
 h3{
 	font-size: 2em;
@@ -52,8 +57,10 @@ input.form-control{
 	height: 40px;
 }
 nav.navbar.navbar-default{
-	background: #000;
-	border: #000;
+	border: transparent;
+}
+nav.navbar.navbar-default .container{
+	background: #1c1c1c;
 	border-radius: 0px;
 	border-bottom: 2px solid #d44646;
 }
@@ -164,3 +171,47 @@ p.details{
 	border-bottom: 1px solid rgba(158, 158, 158, 0.24);
 	padding: 0.5em;
 }
+footer p{
+	color: #898989;
+}
+footer h3{
+	color: #898989;
+	margin-top: 0em;
+	text-transform: uppercase;
+}
+footer form.navbar-form{
+	padding: 0em;
+}
+footer input[type="text"]{
+	background: #282828;
+	border-color: #282828;
+	padding: 0px 35px;
+	width: 100%;
+}
+footer button.btn-default{
+	background: #e03d3d;
+	border-color: #e03d3d;
+	border-radius: 0px;
+	color: #fff;
+	height: 40px;
+}
+.row.foot-nav{
+	background: #e03d3d;
+}
+.row.foot-nav ul>li>a{
+	color: #fff;
+}
+.row.foot-nav ul>li>a:hover{
+	color: #000;
+	background: transparent;
+}
+.star{
+	padding-left: 2em;
+	color: #e03d3d;	
+}
+/*.star.glyphicon.glyphicon-star{
+	color: #e03d3d;
+}
+.star.glyphicon.glyphicon-star::first-child{
+	color: rgba(224, 61, 61, 0.45);
+}*/
