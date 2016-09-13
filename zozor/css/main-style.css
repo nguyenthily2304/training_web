@@ -3,7 +3,7 @@ body{
 	background-size: cover;
 }
 .container{
-	width: 60%;
+	width: 800px;
 	margin: 0 auto;
 }
 @font-face{
@@ -21,8 +21,12 @@ header{
 	border-bottom: 2px solid rgba(154, 120, 122, 0.6)
 }
 .logo{
-	width: 50%;
+	width: 20%;
 	float: left;
+}
+.logo p{
+	font-family: dayrom;
+	margin-top: -2em;
 }
 img{
 	vertical-align: middle;
@@ -37,12 +41,8 @@ span h3{
 	margin-top: -0.75em;
 	padding-left: 1.5em;	
 }
-.logo p{
-	font-family: dayrom;
-	margin-top: -2em;
-}
 header nav{
-	width: 50%;
+	/*width: 70%;*/
 	padding-top: 3em;
 	float: right;
 }
@@ -69,7 +69,7 @@ section .flash{
 	background-color: rgba(0, 0, 0, 0.57);
     position: absolute;
     color: #fff;
-    width: 59.4%;
+    width: 800px;
     margin-top: -3.2em;
 }
 section .flash p{
@@ -78,15 +78,15 @@ section .flash p{
 	padding-left: 1em;
 }
 section .flash button{
-	width: 10%;
-    float: right;
-    margin-right: 2em;
-    margin-top: 0.75em;
-    padding: 0.75em;
-    border: 1px;
-    border-radius: 7px;
-    color: #fff;
-    background: rgba(222, 11, 11, 0.87);
+	width: 13%;
+	float: right;
+	margin-right: 2em;
+	margin-top: 0.75em;
+	padding: 0.75em;
+	border: 1px;
+	border-radius: 7px;
+	color: #fff;
+	background: rgba(222, 11, 11, 0.87);
 }
 /*--------------div-------------- */
 section.second-section{
@@ -112,7 +112,7 @@ section aside{
 article h3, aside h3{
 	text-transform: uppercase;	
 	font-weight: normal;
-	padding-left: 1em;
+	padding-left: 0.5em;
 }
 article img.icon_ep{
 	padding-right: 0.5em;
@@ -129,7 +129,7 @@ aside img.classes_icon{
 .arrow_left{
 	width: 5%;
 	margin-top:5em;
-	margin-left: -1em;
+	margin-left: -0.75em;
 }
 aside p{
 	padding: 0 1em 0 1em;
