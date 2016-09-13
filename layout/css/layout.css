@@ -1,0 +1,21 @@
+tr:first-child, tr:nth-child(2),tr:last-child{
+	background-color: #000;
+	color: #fff;
+}
+h1.title{
+	text-align: center;
+	/*color: violet;*/
+}
+h3{
+	padding-top: 1em;
+}
+div{
+	padding-right: 2em;
+}
+li{
+	list-style-type: none;
+}
+li>a{
+	text-decoration: none;
+	color: blue;
+}
