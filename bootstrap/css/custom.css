@@ -1,0 +1,166 @@
+body{
+	background: #fff;
+	font-family: Rokkitt-Regular;
+}
+@font-face{
+	src: url('../fonts/Rokkitt-Regular.ttf');
+	font-family: Rokkitt-Regular;
+}	
+header{
+	background: #d44646;
+	padding: 2em;
+}
+section{
+	padding-top: 1em;
+}
+h3{
+	font-size: 2em;
+}
+h3 a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+h3.news.tenis{
+	margin-top: 0px;
+}
+h3.news.tenis a{
+	text-transform: initial;
+	text-decoration: none;
+	color: #000;
+}
+h3.news.tenis a:hover{
+	color:  #d44646;
+}
+h3 a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+h3.title{
+	background:  #d44646;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 0.25em;
+	margin-top: 0.5em;
+	margin-left: 0em;
+}
+p{
+	color: #fff;
+}
+input.form-control{
+	border-radius: 0px;
+	height: 40px;
+}
+nav.navbar.navbar-default{
+	background: #000;
+	border: #000;
+	border-radius: 0px;
+	border-bottom: 2px solid #d44646;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+.navbar-default .navbar-nav>li>a:hover{
+	color: #d44646;
+	text-transform: uppercase;
+}
+ul.nav.navbar-nav.menu{
+	text-align: center;
+}
+ul.slide-bar{
+	padding: 1em 0 2em 0 ;
+}
+ul.slide-bar li:first-child{
+	border: none;
+}
+ul.slide-bar li{
+	float: left;
+    list-style-type: none;
+    padding: 0 1em 0 1em;
+    border-left: 1px solid #867777;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+}
+ul.slide-bar li a{
+	color: #5f5b5b;
+}
+ul.slide-bar li a:hover{
+	color: #d44646;
+	text-decoration: none;
+}
+p.tag{
+	color: #5f5b5b;
+	border-bottom: 2px solid rgba(158, 158, 158, 0.24);
+}
+p.number{
+	/**/
+	color: #fff;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 2em;
+}
+p.number.first{
+	background: #d44646;
+}
+p.number.second{
+	background: #000;
+}
+p.number.third,p.number.four{
+	background: #9E9E9E;
+}
+h4.media-heading.news {
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+}
+.media-body small::before{
+	content: "-";
+	color: #d44646;
+}
+.media-body small{
+	color: #d44646;
+	font-style: italic;
+}
+.row.catelog >.col-md-12{
+	border-top: 1px solid rgba(158, 158, 158, 0.24);
+	padding: 0.5em;
+}
+.col-md-8.content > .row{
+	border-bottom: 1px solid rgba(158, 158, 158, 0.24);
+	padding: 1em 0 1em 0;
+	width: 100%;
+}
+h3.news{
+	font-size: 1.25em;
+    letter-spacing: 0.1em;
+    margin-top: 1em;
+}
+h3.heading{
+	font-size: 1.5em;
+    letter-spacing: 0.1em;
+    margin-top: 0.25em;
+    /*padding-top: 1em;*/
+}
+span.caption{
+	text-transform: uppercase;
+}
+date::before{
+	content: "-";
+	color: #d44646;
+	padding: 0.25em;
+}
+date{
+	color: #d44646;
+	font-style: italic;
+}
+p.details{
+	color: #524d4d;
+    font-size: 1em;
+    padding-top: 1em;
+}
+.row.tenis >.col-md-12{
+	border-bottom: 1px solid rgba(158, 158, 158, 0.24);
+	padding: 0.5em;
+}
