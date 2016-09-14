@@ -78,7 +78,7 @@ section .flash p{
 	padding-left: 1em;
 }
 section .flash button{
-	width: 13%;
+	width: 100px;
 	float: right;
 	margin-right: 2em;
 	margin-top: 0.75em;
