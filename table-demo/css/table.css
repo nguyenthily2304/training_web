@@ -1,17 +1,17 @@
 table{
-	color: #000;
-	border: 0px solid #eee;
-	border-spacing: 0.25em;
-	border-collapse: collapse; /*remove 1/2 border*/
+  color: #000;
+  border: 0px solid #eee;
+  border-spacing: 0.25em;
+  border-collapse: collapse; /*remove 1/2 border*/
 }
 tbody tr:nth-child(odd) {
   background: rgba(0, 188, 212, 0.22);
 }
 th, td{
-	text-align: center;
-	padding: 0.5em;
+  text-align: center;
+  padding: 0.5em;
 }
 td>a{
-	text-decoration: none;
-	color: #000;
+  text-decoration: none;
+  color: #000;
 }

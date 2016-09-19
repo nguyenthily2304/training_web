@@ -1,41 +1,41 @@
 
 /*--------create menu using ul html----*/
 ul{
-	overflow: hidden;
-	background-color: #000;
+  overflow: hidden;
+  background-color: #000;
 }
 li{
-	list-style-type: none;
-	float: left;
-	padding: 1em;
+  list-style-type: none;
+  float: left;
+  padding: 1em;
 }
 li>a{
-	text-decoration: none;
-	color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 li.active{
-	background: #00BCD4;
-	border-bottom: 2px solid #fff;
-	color: #fff;
+  background: #00BCD4;
+  border-bottom: 2px solid #fff;
+  color: #fff;
 }
 li:hover, li:visited, li:active , li:focus{
-	background: #00BCD4;
-	border-bottom: 2px solid #fff;
-	color: #fff;
+  background: #00BCD4;
+  border-bottom: 2px solid #fff;
+  color: #fff;
 }
 
 /*-------------------nav in html5---------------------*/
 nav{
-	background: #E91E63;
-	padding: 1em;
+  background: #E91E63;
+  padding: 1em;
 }
 nav a{
-	color: #fff;
-	text-decoration: none;
-	padding: 1em;
-	font-weight: 900;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+  font-weight: 900;
 }
 nav a:hover{
-	background: transparent;
-	border-bottom: 3px solid #00BCD4;
+  background: transparent;
+  border-bottom: 3px solid #00BCD4;
 }
