@@ -7,75 +7,79 @@
     <title>Title Page</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main-style.css">
+    <script src="javascript/condition.js"></script>
   </head>
   <body>
   <div class="container">
     <section>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <form class="navbar-form">
             <div class="form-group">
-              <input type="search" name="key" class="form-control" placeholder="Search">
+              <input type="search" id="key" value="" class="form-control" placeholder="Enter keywords">
             </div>
-            <button type="button" onclick="" class="btn btn-default">Search</button>
+            <button onclick="search()" type="button" class="btn btn-default">Search</button>
           </form>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
           <select name="optionSort" id="optionSort" class="form-control">
             <option value="name" name="name">Name</option>
             <option value="dob" name="dob">Date of birth</option>
             <!-- <option value=""></option> -->
           </select>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6" id="sortBy">
           <label class="radio-inline">
-            <input type="radio" name="type" id="desc" value="desc" checked="">Desc
+            <input type="radio" name="typeSort" id="desc" value="desc" checked="">Desc
           </label>
           <label class="radio-inline">
-            <input type="radio" name="type" id="asc" value="asc">Asc
+            <input type="radio" name="typeSort" id="asc" value="asc">Asc
           </label>
         </div>
       </div>
-      <div class="row keywords">
-        <div class="col-md-4">
-          <img src="images/man02.png" alt="" class="img-responsive">
+      <div id="list">
+        <div class="row divKeywords">
+          <div class="col-md-4">
+            <img src="images/man02.png" alt="" class="img-responsive">
+          </div>
+          <div class="col-md-8">
+            <h3 class="keywords" id="first"><a href="#">Hai Tran</a></h3>
+            <p>PHP Developer</p>
+            <date>23/04/1996</date>
+          </div>
         </div>
-        <div class="col-md-8">
-          <h3><a href="#">Reiko Nguyen</a></h3>
-          <p>PHP Developer</p>
-          <date>23/04/1996</date>
+        <div class="row divKeywords">
+          <div class="col-md-4">
+            <img src="images/08.png" alt="" class="img-responsive">
+          </div>
+          <div class="col-md-8">
+            <h3 class="keywords" id="second"><a href="#">Reiko Nguyen</a></h3>
+            <p>Front-End Developer</p>
+            <date>24/10/1996</date>
+          </div>
+        </div>
+        <div class="row divKeywords">
+          <div class="col-md-4">
+            <img src="images/man01.png" alt="" class="img-responsive">
+          </div>
+          <div class="col-md-8">
+            <h3 class="keywords" id="third"><a href="#">Le Linh</a></h3>
+            <p>Graphic Designer</p>
+            <date>12/12/1996</date>
+          </div>
+        </div>
+        <div class="row divKeywords">
+          <div class="col-md-4">
+            <img src="images/01.png" alt="" class="img-responsive">
+          </div>
+          <div class="col-md-8">
+            <h3 class="keywords" id="fourth"><a href="#">Chien Mitu</a></h3>
+            <p>Programmer</p>
+            <date>23/04/1996</date>
+          </div>
         </div>
       </div>
-      <div class="row keywords">
-        <div class="col-md-4">
-          <img src="images/08.png" alt="" class="img-responsive">
-        </div>
-        <div class="col-md-8">
-          <h3><a href="#">Reiko Nguyen</a></h3>
-          <p>Front-End Developer</p>
-          <date>23/04/1996</date>
-        </div>
-      </div>
-      <div class="row keywords">
-        <div class="col-md-4">
-          <img src="images/man01.png" alt="" class="img-responsive">
-        </div>
-        <div class="col-md-8">
-          <h3><a href="#">Reiko Nguyen</a></h3>
-          <p>Graphic Designer</p>
-          <date>23/04/1996</date>
-        </div>
-      </div>
-       <div class="row keywords">
-        <div class="col-md-4">
-          <img src="images/01.png" alt="" class="img-responsive">
-        </div>
-        <div class="col-md-8">
-          <h3><a href="#">Reiko Nguyen</a></h3>
-          <p>Programmer</p>
-          <date>23/04/1996</date>
-        </div>
-      </div>
+      <div id="result"></div>
     </section>
   </div>  
   </body>
