@@ -1,0 +1,25 @@
+h4 {
+	text-decoration: none;
+	color: #E91E63;
+}
+h4:hover{
+	text-decoration: none;
+	color: #97bf0d;
+}
+date{
+	float: none;
+}
+p a{
+	text-decoration: none;
+	background: #E91E63;
+	color: #fff;
+	padding: 1em;
+}
+p a:hover{
+	text-decoration: none;
+	background: #97bf0d;
+	color: #fff;
+}
+.icon{
+	float: right;
+}
