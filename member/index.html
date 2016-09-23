@@ -22,7 +22,7 @@
           </form>
         </div>
         <div class="col-md-6">
-          <select name="optionSort" id="optionSort" class="form-control">
+          <select name="optionSort" id="optionSort" class="form-control" onchange="search()">
             <option value="name" name="name">Name</option>
             <option value="dob" name="dob">Date of birth</option>
             <!-- <option value=""></option> -->
@@ -30,10 +30,10 @@
         </div>
         <div class="col-md-6" id="sortBy">
           <label class="radio-inline">
-            <input type="radio" name="typeSort" id="desc" value="desc" checked="">Desc
+            <input type="radio" class="checkedSort" name="typeSort" id="desc" value="desc" checked=""  onclick="search()" >Desc
           </label>
           <label class="radio-inline">
-            <input type="radio" name="typeSort" id="asc" value="asc">Asc
+            <input type="radio" class="checkedSort" name="typeSort" id="asc" value="asc"  onclick="search()" >Asc
           </label>
         </div>
       </div>
