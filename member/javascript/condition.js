@@ -37,8 +37,24 @@ var members = [{
 }];
 window.onload = function() {
   search();
-  // redrectDetails();
+  redrectDetails();
 }
+// function onloadFunction() {
+//  var list = document.getElementById(list);
+//  var list = document.getElementById(dataMember);
+//  var info = document.getElementById(info);
+//   window.onload =function(){
+//     search();
+//       list.style.display == 'block';
+//       dataMember.style.display = 'block';
+//       info.style.display = 'none';   
+//     }
+//   window.onload =function(){
+//     redrectDetails();
+//     info.style.display = 'block';
+//     list.style.display == 'hidden';  
+//   }
+// }
 function search() {
   var key = document.getElementById("key");    
   var name = members[name];
@@ -109,7 +125,7 @@ function appendDataIndex(data) {
     dataMember += '<img src="' + data.avatar +'" alt="" class="img-responsive"/>';
     dataMember += '</div>';
     dataMember += '<div class="col-md-8">' ;
-    dataMember += '<h3 onclick="redrectDetails('+data.id+')">'+ '<a href="detail.html?id=' + data.id + '">' + data.name + '</a>'+ '</h3>';
+    dataMember += '<h3 onclick="redrectDetails('+data.id+')">'+ '<a href="index.html?id=' + data.id + '">' + data.name + '</a>'+ '</h3>';
     dataMember += '<p>' + data.job + '</p>';
     dataMember += '<date>'+ data.dob +'</date>';
     dataMember += '</div>';
@@ -121,9 +137,9 @@ function redrectDetails(id) {
   var splitUrl = url.split("=",2);
   var idUrl = parseInt(splitUrl[1]);
   var detailMembers ="";
-  for (var i = 0; i < members.length ; i++) {      
-    if (members[i].id == idUrl) {
-      var result = members[i];
+  // for (var i = 0; i < members.length ; i++) {      
+  //   if (members[i].id == idUrl) {
+      var result = members[idUrl]; // result = members[idUrl -1]
       detailMembers += '<div class="row">';
       detailMembers += '<div class="col-md-4">';
       detailMembers += '<img src="' + result.avatar +'" alt="" class="img-responsive"/>'; 
@@ -137,37 +153,26 @@ function redrectDetails(id) {
       detailMembers += '<p>'+'<strong>'+ 'History:' +'</strong>' +result.bio +'</p>';
       detailMembers += '</div>';
       detailMembers += '</div>';
-    }
-  }
+  //   }
+  // }
   document.getElementById("infoDetail").innerHTML = detailMembers;
 }
-function onclickToChange{
-  var move ={};
-  var move.ids = {};
-  move.move.next = function(id){
-    var ids = Object.keys( o ),html
-        idIndex = ids.indexOf(members[id]),
-        nextIndex = idIndex += 1;
-    if(nextIndex >= keys.length){
-      return;
-    }
-    var nextKey = keys[ nextIndex ]
-    return nextKey;
-  };
-}
-
-
-// //PREVIOUS
-// infoDetail.keys.previous = function(o, id){
-//   var keys = Object.keys( o ),
-//       idIndex = keys.indexOf(members[id]),
-//       nextIndex = idIndex -= 1;
-//   if(idIndex === 0){
-//     return;
+// function onclickToChange(){
+//   var previous = document.getElementById("previous");
+//   var next = document.getElementById("next");
+//   for (var i = 0; i < members.length; i++) {
+//     if(previous < members[i].id){
+//       splitUrl = splitUrl +1;
+//       members[i].id.onclick = next();
+//     }
+//     if(next > members[i].id){
+//       splitUrl = splitUrl -1;
+//       members[i].id.onclick = previous();
+//     }
 //   }
-//   var nextKey = keys[ nextIndex ]
-//   return nextKey;
-// };
+//   redrectDetails.call();
+// }
+
 // function appendDataDetails(data) {
 //   // console.log(data);
 //   var detailMembers = '';
