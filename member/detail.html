@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main-style.css">
     <link rel="stylesheet" href="css/details.css">
+    <script src="javascript/condition.js"></script>
+    <script>
+      window.onload = function() {
+        redrectDetails()
+      };
+    </script>
   </head>
   <body>
     <div class="container"> 
@@ -19,56 +25,12 @@
           </div>
           <div class="col-md-6">
             <div class="icon">
-              <a href=""><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
-              <a href=""><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+              <a href=""><span class="glyphicon glyphicon-menu-left" aria-hidden="true" id="previous" onclick="previous()"></span></a>
+              <a href=""><span class="glyphicon glyphicon-menu-right" aria-hidden="true" id="next" onclick="next()"></span></a>
             </div>
           </div>
         </div>
-        <div id="moveOther">                       
-          <div class="row details" id="first">
-            <div class="col-md-4">
-              <a href="#">
-                <img class="img-responsive" src="images/01.png" alt="...">
-              </a>
-            </div>
-            <div class="col-md-8">
-              <h4>Hai Tran</h4>
-              <p>Job: PHP Developer</p>
-              <p>Date of Birth: <date>23/04/1996<date></p>
-              <p>Phone: 0988 .090 .987</p>
-              <p>Address: K89/27b Thanh Nghi, Hai Chau</p>
-              <p><strong>History:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tempore perspiciatis expedita nam laborum libero quia beatae delectus nulla reiciendis suscipit praesentium aut fuga, ex veniam numquam exercitationem sunt. Accusantium.</p>
-            </div>
-          </div>
-          <div class="row details" id="second">
-            <div class="col-md-4">
-              <a href="#">
-                <img class="img-responsive" src="images/01.png" alt="...">
-              </a>
-            </div>
-            <div class="col-md-8">
-              <h4>Reiko Nguyen</h4>
-              <p>Date of Birth: <date>24/10/1996<date></p>
-              <p>Phone: 0988 .090 .575</p>
-              <p>Address: K89/27b Thanh Nghi, Hai Chau</p>
-              <p><strong>History:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tempore perspiciatis expedita nam laborum libero quia beatae delectus nulla reiciendis suscipit praesentium aut fuga, ex veniam numquam exercitationem sunt. Accusantium.</p>
-            </div>
-          </div>
-          <div class="row details" id="third">
-            <div class="col-md-4">
-              <a href="#">
-                <img class="img-responsive" src="images/01.png" alt="...">
-              </a>
-            </div>
-            <div class="col-md-8">
-              <h4>Le Linh</h4>
-              <p>Date of Birth: <date>12/12/1996<date></p>
-              <p>Phone: 0988 .090 .987</p>
-              <p>Address: K89/27b Thanh Nghi, Hai Chau</p>
-              <p><strong>History:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tempore perspiciatis expedita nam laborum libero quia beatae delectus nulla reiciendis suscipit praesentium aut fuga, ex veniam numquam exercitationem sunt. Accusantium.</p>
-            </div>
-          </div>
-        </div>    
+        <div id="infoDetail"></div>    
         <p><a href="index.html">Back to menu</a></p>     
       </section>
     </div>
