@@ -37,24 +37,37 @@ var members = [{
 }];
 window.onload = function() {
   search();
-  redrectDetails();
+  // gotoDetail();
+  // gotoNextBack();
 }
-// function onloadFunction() {
-//  var list = document.getElementById(list);
-//  var list = document.getElementById(dataMember);
-//  var info = document.getElementById(info);
-//   window.onload =function(){
-//     search();
-//       list.style.display == 'block';
-//       dataMember.style.display = 'block';
-//       info.style.display = 'none';   
-//     }
-//   window.onload =function(){
-//     redrectDetails();
-//     info.style.display = 'block';
-//     list.style.display == 'hidden';  
-//   }
-// }
+function gotoDetail(clicked_id){
+   var dataMember = document.getElementById('dataMember');
+    dataMember.style.display == 'none'; //hide div
+
+    //appent html to div 
+    var htmlAppend = '';
+    htmlAppend += redrectDetails(members[clicked_id]);
+
+    document.getElementById("info").innerHTML = htmlAppend;
+
+    //add go to next and go to back
+    document.getElementById("next").attr('id') = clicked_id + 1;
+    document.getElementById("back").attr('id') = clicked_id - 1;
+}
+
+function gotoNextBack(clicked_id){
+  var clicked_id = document.getElementById(this.id);
+  //appent html to div 
+    var htmlAppend = '';
+    htmlAppend += redrectDetails(members[clicked_id]);
+
+    document.getElementById("info").innerHTML = htmlAppend;
+
+    //add go to next and go to back
+    document.getElementById("next").attr('id') = clicked_id + 1;
+    document.getElementById("back").attr('id') = clicked_id - 1;
+
+}
 function search() {
   var key = document.getElementById("key");    
   var name = members[name];
@@ -125,21 +138,15 @@ function appendDataIndex(data) {
     dataMember += '<img src="' + data.avatar +'" alt="" class="img-responsive"/>';
     dataMember += '</div>';
     dataMember += '<div class="col-md-8">' ;
-    dataMember += '<h3 onclick="redrectDetails('+data.id+')">'+ '<a href="index.html?id=' + data.id + '">' + data.name + '</a>'+ '</h3>';
+    dataMember += '<h3 onclick="gotoDetail(this.id)" class="detailID" id='+ data.id +'>'+ data.name + '</h3>';
     dataMember += '<p>' + data.job + '</p>';
     dataMember += '<date>'+ data.dob +'</date>';
     dataMember += '</div>';
     dataMember += '</div>';
   return dataMember;
 }
-function redrectDetails(id) { 
-  var url = window.location.href;
-  var splitUrl = url.split("=",2);
-  var idUrl = parseInt(splitUrl[1]);
-  var detailMembers ="";
-  // for (var i = 0; i < members.length ; i++) {      
-  //   if (members[i].id == idUrl) {
-      var result = members[idUrl]; // result = members[idUrl -1]
+function redrectDetails(result) { 
+  var detailMembers = '';
       detailMembers += '<div class="row">';
       detailMembers += '<div class="col-md-4">';
       detailMembers += '<img src="' + result.avatar +'" alt="" class="img-responsive"/>'; 
@@ -153,8 +160,6 @@ function redrectDetails(id) {
       detailMembers += '<p>'+'<strong>'+ 'History:' +'</strong>' +result.bio +'</p>';
       detailMembers += '</div>';
       detailMembers += '</div>';
-  //   }
-  // }
   document.getElementById("infoDetail").innerHTML = detailMembers;
 }
 // function onclickToChange(){
